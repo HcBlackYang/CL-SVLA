@@ -1,0 +1,45 @@
+# --- Core Deep Learning & Transformers ---
+# Pinned to specific versions for reproducibility
+torch==2.2.0
+torchvision==0.17.0
+torchaudio==2.2.0
+transformers @ git+https://github.com/huggingface/transformers.git@0cf27916f09a1a99af55ef4f2f3e8675372f38b6
+peft==0.11.1
+accelerate==1.8.1       # Note: Newer versions might be available
+bitsandbytes==0.46.0    # For 4-bit model quantization
+safetensors==0.5.3
+einops==0.8.1
+flash-attn==2.5.5       # Optional: For high-performance attention, requires compatible GPU/CUDA
+
+# --- Simulation & Robotics Environment ---
+# Key dependencies for Robosuite, LIBERO, and MuJoCo
+mujoco==3.3.3
+glfw==2.9.0
+gym==0.26.2
+h5py==3.14.0
+robosuite==1.4.1
+# Editable installs from git - ensure these are cloned and installed correctly
+# -e git+https://github.com/Lifelong-Robot-Learning/LIBERO.git@8f1084e3132a39270c3a13ebe37270a43ece2a01#egg=libero
+# -e git+https://github.com/openvla/openvla.git@c8f03f48af692657d3060c19588038c7220e9af9#egg=openvla
+
+# --- Data Handling & Utilities ---
+numpy==1.26.4
+pandas==2.3.1
+opencv-python==4.11.0.86
+Pillow==10.3.0          # Newer versions are usually fine
+scikit-learn==1.7.0
+scipy==1.15.3
+tqdm==4.67.1
+matplotlib==3.10.3
+seaborn==0.13.2
+PyYAML==6.0.2
+wandb==0.20.1           # For experiment tracking
+
+# --- Other Important Dependencies ---
+# These are often dependencies of the above libraries but good to list
+huggingface-hub==0.33.1
+tokenizers==0.21.2
+pydantic==2.11.7
+GitPython==3.1.44
+trimesh==4.6.12
+nltk==3.9.1             # For text processing
