@@ -11,6 +11,8 @@ from .mfm_config import (
     load_config
 )
 
+from .vla_config import Config 
+
 from .model_config import (
     ModelConfig,
     VLAModelConfig,
@@ -26,6 +28,7 @@ from .task_config import (
 )
 
 __all__ = [
+    "Config",
     # mfm_config
     "MFMConfig",
     "MonitoringConfig",

@@ -23,8 +23,8 @@ OPENVLA_SRC_DIR = PROJECT_ROOT / "openvla" / "OpenVLA"
 if not OPENVLA_SRC_DIR.is_dir():
     raise FileNotFoundError(f"OpenVLA source directory not found at: {OPENVLA_SRC_DIR}")
 sys.path.insert(0, str(OPENVLA_SRC_DIR))
-from openvla.OpenVLA.config import Config as OpenVLAConfig
-import openvla.OpenVLA.utils as vla_utils
+from MFM.config import Config as OpenVLAConfig
+import MFM.utils.utils as vla_utils
 from libero.libero import benchmark
 from dark_mfm import save_dual_view_video_with_step_counter, convert_numpy_types
 
